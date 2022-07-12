@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: vishaldenge/shitalcicd:${BUILD_NUMBER}
+        image: vishaldenge/shitalcicd
         ports:
         - containerPort: 80
 ---
