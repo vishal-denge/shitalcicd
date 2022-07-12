@@ -1,29 +1,5 @@
-############################################################
-# Dockerfile to build Nginx Installed Containers
-# Based on Ubuntu
-############################################################
+FROM nginx
 
-
-# Set the base image to Ubuntu
-FROM ubuntu
-
-# File Author / Maintainer
-MAINTAINER Karthik Gaekwad
-
-# Install Nginx
-
-# Add application repository URL to the default sources
-# RUN echo "deb http://archive.ubuntu.com/ubuntu/ raring main universe" >> /etc/apt/sources.list
-
-# Update the repository
-#RUN apt-get update
-
-# Install necessary tools
-RUN apt-get install -y vim wget dialog net-tools
-
-RUN apt-get install -y nginx
-
-# Remove the default Nginx configuration file
 RUN rm -v /etc/nginx/nginx.conf
 
 # Copy a configuration file from the current directory
