@@ -1,4 +1,4 @@
-FROM nginx
+FROM docker.io/library/nginx:latest
 
 RUN rm -v /etc/nginx/nginx.conf
 
