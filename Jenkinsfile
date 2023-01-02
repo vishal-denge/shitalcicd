@@ -17,7 +17,7 @@ node {
      stage ('DOCKER PUSH')
      
      {
-       sh "docker login -u vishaldenge -p 'v!sh@l123'"
+       sh "docker login -u vishaldenge -p '${pass}'"
        sh 'docker push vishaldenge/shitalcicd:${BUILD_NUMBER}'
      }
      
